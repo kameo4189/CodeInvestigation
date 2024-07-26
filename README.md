@@ -1,4 +1,4 @@
-```C++
+```{C++, attr.source='.numberLines'}
 class Base
 {
 public:
