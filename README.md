@@ -1,4 +1,4 @@
-```{.cpp}
+~~{.cpp}
 class Base
 {
 public:
@@ -34,4 +34,4 @@ int main()
     delete b_ptr;
     return 0;
 }
-```
+~~~
