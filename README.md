@@ -1,4 +1,4 @@
-```C++
+```{.cpp}
 class Base
 {
 public:
