@@ -1,4 +1,4 @@
-```bash
+```C++
 class Base
 {
 public:
