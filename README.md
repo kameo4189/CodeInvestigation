@@ -2,7 +2,7 @@
 
 * [Snippet](#Snippet)
 * [Analysis](#Analysis)
-  * [Base class](##Base class)
+  * [Base](##Base)
   * [Child](##Child)
   * [main](##main)
 * [Conclusion](#Conclusion)
