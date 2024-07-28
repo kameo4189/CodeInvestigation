@@ -150,7 +150,9 @@ Final solution is as below.
 class Base
 {
 public:
-    explicit Base(unsigned numInt): m_vec(numInt);
+    explicit Base(unsigned numInt): m_vec(numInt)
+    {
+    }
 
     virtual void foo() {}
 
