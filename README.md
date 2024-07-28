@@ -117,14 +117,14 @@ int main()
     - For not confusing with *m_arr* between *Base* and *Child* class, change name of them following their type.
       - If using pointer (Old C+ or smart pointer) for *m_arr*, change name of *m_arr* of Base class to *m_arrInt* and *Child* to *m_arrChar*.
       - If using *vector* and *string* for *m_arr* of Base class and *Child* class, change name to *m_vec* and *m_str*.
-  - Hard-code initialization of *m_arr*: add one more argument *numChar* in constructor with default value is 10 for *char* size, name of argument that is passed to constructor *Base* class is *numInt*. This will solve unclear meaning name of argument *num*.
+  - Hard-code initialization of *m_arr*: add one more argument *numChar* in constructor with default value is 10 for *char* size, name of argument that is passed to constructor *Base* class will be changed to *numInt*. This will solve unclear meaning name of argument *num*.
   - Method *foo*: add keyword *override*.
 
 **→ Final solution:**
 - **Change change type of *m_arr* to *string* and name to *m_str***
 - **Change name of *m_arr* of Base class to *m_vec***
-- **In constructor, add 1 more argument *numInt* to pass for constructor of *Base* class.** 
-- **Change name of argument *num* to *numChar* with default value is 10.**
+- **Change name of argument *num* to *numInt* to pass to *Base* class.**
+- **In constructor, add 1 more argument *numChar* with default value is 10 for initializing m_str.** 
 - **Add keyword *override* for method *foo*.**
 
 ## main
