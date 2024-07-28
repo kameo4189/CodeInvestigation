@@ -80,11 +80,11 @@ int main()
 ## Child
 ### Problems
 - Attribute *m_arr*:
-  - Attribute *m_arr* use raw pointer of Old C++ for initializing *char* array in constructor.
-  - Attribute *m_arr* isn't release when object of Base class is destroyed, it can cause memory leak.
-  - Attribute *m_arr* have same name with *m_arr* of parent class, although *m_arr* of parent class can be accessed by using Base::m_arr, sometimes it will cause confusion.
-  - Attribute *m_arr* is initialized by hard-code with size = 10 in constructor.
-  - Method foo() isn't marked as *override* to let reader and compiler know it is an override.
+  - Use raw pointer of Old C++ for initializing *char* array in constructor.
+  - Not release when object of Base class is destroyed, it can cause memory leak.
+  - Have same name with *m_arr* of parent class, although *m_arr* of parent class can be accessed by using Base::m_arr, sometimes it will cause confusion.
+  - Initializing by hard-code with size = 10 in constructor.
+- Method foo() isn't marked as *override* to let reader and compiler know it is an override (optional).
 ### Solutions
 - Attribute *m_arr*:
   - Type, name and release memory:
