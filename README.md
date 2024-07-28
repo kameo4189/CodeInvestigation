@@ -1,11 +1,17 @@
 ## Contents
 
-* [Snippet](#Snippet)
-* [Analysis](#Analysis)
-  * [Base](##Base)
-  * [Child](##Child)
-  * [main](##main)
-* [Conclusion](#Conclusion)
+- [Snippet](#snippet)
+- [Analysis](#analysis)
+  - [Base class](#base-class)
+    - [Problems](#problems)
+    - [Solutions](#solutions)
+  - [Child class](#child-class)
+    - [Problems](#problems-1)
+    - [Solutions](#solutions-1)
+  - [main method](#main-method)
+    - [Problems](#problems-2)
+    - [Solutions](#solutions-2)
+- [Conclusion](#conclusion)
 
 # Snippet
 ```C++
