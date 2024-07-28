@@ -143,7 +143,8 @@ int main()
 - **Change change type of *b_ptr* and code for creating it to *shared_ptr\<Base\>***
 
 # Conclusion
-Final solution is as below.
+Final solution is as below.\
+Smart pointer can be use _shared_ptr_ or _unique_ptr_ depending on usage needs.\
 *Base* and *Child* classes are also added destructor with *default* keyword to ensure full class components and future maintenance.
 ```C++
 class Base
