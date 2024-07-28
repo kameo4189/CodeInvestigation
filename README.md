@@ -75,7 +75,7 @@ int main()
         {
         }
         ```
-    - The common way is to change type of *m_arr* to *vector\<int\>*, this type is replaced for dynamic array with many built-in methods for array. No need to change code in constructor.
+    - The another more common way is to change type of *m_arr* to *vector\<int\>*, this type is replaced for dynamic array with many built-in methods for array. No need to change code in constructor.
 - Argument *num* in constructor: change name to *numInt*.
 
 **→ Final solution:**
@@ -108,7 +108,7 @@ int main()
         {
         }
         ```
-      - The common way is to change type of *m_arr* to *string*, this type is replaced for array of char with many built-in methods for string. Constructor will be changed as below.
+      - The another more common way is to change type of *m_arr* to *string*, this type is replaced for array of char with many built-in methods for string. Constructor will be changed as below.
         ```C++
         explicit Child(unsigned num) : Base(num), m_arr(numChar, ' ')
         {
