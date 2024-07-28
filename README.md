@@ -144,7 +144,7 @@ int main()
 
 # Conclusion
 Final solution is as below.
-I also added destructor for *Base* class with *default* keyword to ensure full class components and future maintenance.
+*Base* and *Child* classes are also added destructor with *default* keyword to ensure full class components and future maintenance.
 ```C++
 class Base
 {
