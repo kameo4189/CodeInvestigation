@@ -146,6 +146,7 @@ int main()
 
 # Conclusion
 Final solution is as below.
+I also added destructor for *Base* class with *default* keyword to ensure full class components and future maintenance.
 ```C++
 class Base
 {
@@ -155,6 +156,8 @@ public:
     }
 
     virtual void foo() {}
+
+    virtual ~Base() = default;
 
 protected:
     vector<int> m_vec;
