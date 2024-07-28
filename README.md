@@ -71,7 +71,7 @@ int main()
   - If using Modern C++:
     - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<int[]\>* and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as array. Constructor will be changed as below.
         ```C++
-        explicit Base(unsigned num) : m_arr(new int[numInt])
+        explicit Base(unsigned num) : m_arr(new int[num])
         {
         }
         ```
@@ -104,7 +104,7 @@ int main()
     - If using Modern C++:
       - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<char[]\>* and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as char array. Constructor will be changed as below.
         ```C++
-        explicit Base(unsigned num) : m_arr(new char[numChar])
+        explicit Base(unsigned num) : m_arr(new char[num])
         {
         }
         ```
