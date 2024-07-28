@@ -153,9 +153,9 @@ public:
     {
     }
 
-    virtual void foo() {}
-
     virtual ~Base() = default;
+
+    virtual void foo() {}
 
 protected:
     vector<int> m_vec;
@@ -167,6 +167,8 @@ public:
     explicit Child(unsigned numInt, unsigned numChar = 10) : Base(numInt), m_str(numChar, ' ')
     {
     }
+
+    ~Child() = default;
 
     virtual void foo() override {}
 
