@@ -2,7 +2,7 @@
 
 * [Snippet](#Snippet)
 * [Analysis](#Analysis)
-  * [Base](##Base)
+  * [Base class](##Base class)
   * [Child](##Child)
   * [main](##main)
 * [Conclusion](#Conclusion)
@@ -46,7 +46,7 @@ int main()
 }
 ```
 # Analysis
-## Base
+## Base class
 ### Problems
 - Attribute *m_arr*:
   - Use raw pointer of use Old C++ for initializing *int* array in constructor.
