@@ -110,7 +110,7 @@ int main()
         ```
       - The another more common way is to change type of *m_arr* to *string*, this type is replaced for array of char with many built-in methods for string. Constructor will be changed as below.
         ```C++
-        explicit Child(unsigned num) : Base(num), m_arr(numChar, ' ')
+        explicit Child(unsigned num) : Base(num), m_arr(num, ' ')
         {
         }
         ```
