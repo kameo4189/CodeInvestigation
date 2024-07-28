@@ -69,7 +69,7 @@ int main()
     }
   ```
   - If using Modern C++:
-    - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<int[]\>* and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as array. Constructor will be changed as below.
+    - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<int[]\>* (or *unique_ptr\<int[]\>* depending on usage needs) and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as array. Constructor will be changed as below.
         ```C++
         explicit Base(unsigned num) : m_arr(new int[num])
         {
@@ -102,7 +102,7 @@ int main()
       }
     ```
     - If using Modern C++:
-      - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<char[]\>* and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as char array. Constructor will be changed as below.
+      - If want to keep *m_arr* is pointer, change type of *m_arr* to *shared_ptr\<char[]\>* (or *unique_ptr\<char[]\>* depending on usage needs) and no need to add code for release memory. But this solution is only for some certain purposes because there are some inconveniences when using pointer as char array. Constructor will be changed as below.
         ```C++
         explicit Base(unsigned num) : m_arr(new char[num])
         {
@@ -137,14 +137,14 @@ int main()
     Base *b_ptr = new Base(5);
     delete b_ptr;
     ```
-- If using Modern C++, change type of *b_ptr* to *shared_ptr\<Base\>*.
+- If using Modern C++, change type of *b_ptr* to *shared_ptr\<Base\>* (or *unique_ptr\<Base\>* depending on usage needs).
 
 **→ Final solution:**
 - **Change change type of *b_ptr* and code for creating it to *shared_ptr\<Base\>***
 
 # Conclusion
 Final solution is as below.\
-Smart pointer can be use _shared_ptr_ or _unique_ptr_ depending on usage needs.\
+Current solution use _shared_ptr_ to replace raw pointer, can also use _unique_ptr_ instead depending on usage needs.\
 *Base* and *Child* classes are also added destructor with *default* keyword to ensure full class components and future maintenance.
 ```C++
 class Base
