@@ -49,8 +49,8 @@ int main()
 ## Base
 ### Problems
 - Attribute *m_arr*:
-  - Attribute *m_arr* use raw pointer of use Old C++ for initializing *int* array in constructor.
-  - Attribute *m_arr* isn't release when object of Base class is destroyed, it can cause memory leak.
+  - Use raw pointer of use Old C++ for initializing *int* array in constructor.
+  - Not release when object of Base class is destroyed, it can cause memory leak.
 - Argument *num* in constructor has unclear meaning name.
 ### Solutions
 - Attribute *m_arr*:
